@@ -69,4 +69,22 @@ console.log(resultado3);
 /o$/: pega se termina em o (se tiver final de linha, não pega)
 
 
+/\./: procurando apenas o .
+
+\s: procura espaço
 ```
+
+```
+este é meu email: dlimapa@gmail12.com.br, vamos pesquisar. outro email dlimapa13-15@gmail12.com.br
+
+/([a-z0-9]\.\-{2,})@([a-z0-9]{2,})(\.[a-z]{2,})(\.[a-z]{2,})?/g: ultimo grupo é opcional, pois pode ser apenas gmail.com
+```
+
+```
+meu telefone é (91) 98080-8070
+
+/(\([0-9]{2,}\))\s([0-9]{4,5})\-([0-9]{4})/g
+
+/(\([0-9]{2,}\))\s([0-9]{1})?([0-9]{4})\-([0-9]{4})/g: quinto numero opicional
+```
+
