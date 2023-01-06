@@ -5,7 +5,3 @@ Código gerado ao assitir a live *Como fazer agendamento de tarefas com Python e
 ## Rocketry
 
 - pip install rocketry
-
-## Momento de parada
-
-https://youtu.be/eepX8Bb2BxI?t=3733
