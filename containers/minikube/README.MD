@@ -1,4 +1,16 @@
-# Instalação no ubuntu
+# Minkube
+
+Fontes:
+
+- https://minikube.sigs.k8s.io/docs/start/
+
+- https://kubernetes.io/pt-br/docs/tutorials/hello-minikube/
+
+ 
+## Instalação no ubuntu
+
+
+
 
 ```bash
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
@@ -6,7 +18,7 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest
 sudo dpkg -i minikube_latest_amd64.deb
 ```
 
-# Uso
+## Uso
 
 - Iniciar
 
@@ -20,11 +32,12 @@ kubectl get po -A
 
 minikube kubectl -- get po -A
 ```
-deploy de aplicação
+- deploy de aplicação
 
+1. service
 
-service
-
+```bash
 kubectl create deployment hello-minikube --image=kicbase/echo-server:1.0
 
 kubectl expose deployment hello-minikube --type=NodePort --port=8080
+```
