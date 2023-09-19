@@ -15,10 +15,10 @@ class Person {
 }
 
 class VariavelMesmoNome {
-    int a = 100;
+    String a = "escopo maior";
 
     public void printValor() {
-        int a = 200;
+        String a = "escopo menor";
 
         //Mesmo nome -> usa o menor escopo
         System.out.println(a);
@@ -26,6 +26,8 @@ class VariavelMesmoNome {
 }
 
 class VariaveisTest {
+    static int i = 3;
+
     public static void main(String[] args) {
         Person p1 = new Person();
 
@@ -43,5 +45,11 @@ class VariaveisTest {
 
         System.out.println(p2.getName());
 
+        VariavelMesmoNome vmn = new VariavelMesmoNome();
+        vmn.printValor();
+
+        for (new VariaveisTest().i = 10; new VariaveisTest().i < 100; new VariaveisTest().i++) {
+            System.out.println(i);
+        }
     }
 }
