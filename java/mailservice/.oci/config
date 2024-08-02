@@ -1,0 +1,6 @@
+[DEFAULT]
+user=ocid1.user.oc1..aaaaaaaarpnvj5dbzdyrwuc3qww3vsws4jh5653feqdegeqkor53tinlqbwq
+fingerprint=dd:24:e1:70:59:95:a4:bc:7f:cb:ca:23:b5:d8:2f:14
+tenancy=ocid1.tenancy.oc1..aaaaaaaaltill23ykxsdvwnynw3g7hgkefmqzv2jke2scklp4aeylnq4wh3a
+region=sa-saopaulo-1
+key_file=/home/daniellima/devops/projetos/private-key-oci.pem
