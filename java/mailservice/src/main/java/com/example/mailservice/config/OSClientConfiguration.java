@@ -18,6 +18,8 @@ public class OSClientConfiguration {
     String profile = "DEFAULT";
 
     public ObjectStorage getObjectStorage() throws IOException {
+        System.out.println("Configuração do OCI");
+        
         Path currentRelativePathe = Paths.get("");
 
         final ConfigFileReader.ConfigFile configFile = ConfigFileReader.parse(currentRelativePathe.toAbsolutePath() + configurationFilePath, profile); 
